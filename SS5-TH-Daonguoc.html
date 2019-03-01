@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    let number=[-3,5,1,3,2,10,11];
+    let firt =0;
+    let last = number.length-1;
+    let x ;
+    while (firt < last) {
+        x = number[firt];   // returns: x = -3 = number[firt];
+        number[firt] = number[last];  // return: number[firt] = 10;
+        number[last] = x;  // return : number[last]=3;
+        firt++;
+        last--
+    }
+    alert(number)
+</script>
+</body>
