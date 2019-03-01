@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<input type="number" id="take">
+<button id="" onclick="push()"> Find </button>
+<script>
+    let number =[1,2,3,4,5,6,7,8,9,10];
+function push() {
+    let x = document.getElementById("take").value;
+    for(let i=0;i<number.length;i++){
+        if(x==number[i]){
+            alert("Số "+ x + " có nằm trong mảng và ở vị trí thứ "+ i);
+            x=true;
+            break;
+        }
+    }
+    if(x!==true)alert("Số "+ x+" không nằm trong mảng")
+}
+</script>
+</body>
+</html>
